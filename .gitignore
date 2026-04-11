@@ -1,10 +1,113 @@
-# Python-generated files
+# ============================================================
+# Python Project .gitignore (pip + uv + conda + notebooks)
+# ============================================================
+
+# ------------------------------------------------------------
+# Python bytecode and interpreter caches
+# ------------------------------------------------------------
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+
+# ------------------------------------------------------------
+# Build, packaging, and distribution artifacts
+# ------------------------------------------------------------
 build/
 dist/
 wheels/
-*.egg-info
+site/
+pip-wheel-metadata/
+*.egg-info/
+*.egg
+.eggs/
 
-# Virtual environments
-.venv
+# ------------------------------------------------------------
+# Virtual environments (pip/uv/conda local env folders)
+# ------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+.conda/
+.mamba/
+
+# ------------------------------------------------------------
+# uv-specific artifacts
+# ------------------------------------------------------------
+.uv/
+
+# Keep lock files under version control for application projects.
+# Uncomment if your team does NOT commit uv lock files.
+# uv.lock
+
+# ------------------------------------------------------------
+# pip and installer logs/temp
+# ------------------------------------------------------------
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ------------------------------------------------------------
+# Test, coverage, type-checking, and lint caches
+# ------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.hypothesis/
+.tox/
+.nox/
+
+# ------------------------------------------------------------
+# Jupyter / Notebook artifacts
+# ------------------------------------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ------------------------------------------------------------
+# IDEs and editor settings
+# ------------------------------------------------------------
+
+# VS Code: ignore workspace-local settings by default, allow shareable configs.
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# JetBrains IDEs (PyCharm, IntelliJ, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ------------------------------------------------------------
+# Documentation build outputs
+# ------------------------------------------------------------
+docs/_build/
+
+# ------------------------------------------------------------
+# OS and filesystem noise
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ------------------------------------------------------------
+# Local environment and secrets
+# ------------------------------------------------------------
+.env
+.env.*
+*.local
+
+# ------------------------------------------------------------
+# Optional: conda environment definition lock/state files
+# ------------------------------------------------------------
+# Keep `environment.yml` committed when you use conda.
+# Uncomment the next line only if your workflow generates private/local variants.
+# environment.local.yml

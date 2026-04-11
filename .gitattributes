@@ -1,0 +1,49 @@
+# Normalize all text files to LF in the repo
+* text=auto eol=lf
+
+# Explicitly enforce LF for code
+*.py   text eol=lf
+*.sh   text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+
+# Windows-specific scripts (only if you actually use them)
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# Binary files (never modify)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary
+*.zip  binary
+*.tar  binary
+*.gz   binary
+*.exe  binary
+*.dll  binary
+
+# End of .gitattributes
+
+
+# This .gitattributes file ensures that all text files in the repository are normalized to use LF (Line Feed) line endings, which is the standard for Unix-based systems. It also explicitly sets certain file types to be treated as text with LF line endings, while marking common binary file types to prevent Git from attempting to modify them. This helps maintain consistency across different operating systems and prevents issues with line endings when collaborating on code.
+
+
+
+# -----------  IMPORTANT NOTE -----------
+
+# After adding or modifying the .gitattributes file, you may need to re-normalize your existing files in the repository. You can do this by running the following commands:
+# git add --renormalize .
+# git commit -m "Normalize line endings according to .gitattributes"
+
+# This will ensure that all files are updated to match the new line ending rules specified in the .gitattributes file. It's important to do this step to avoid any potential issues with inconsistent line endings in your repository, especially when collaborating with others who may be using different operating systems.
+
+# Additionally, to be extra clean, you can also run:
+# ```bash
+# dos2unix .gitattributes
+# ```
+# This will convert the .gitattributes file itself to use LF line endings, ensuring that it is consistent with the settings it defines for other text files in the repository.
+# ------------------------------------------
