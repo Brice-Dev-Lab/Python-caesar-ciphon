@@ -111,3 +111,9 @@ Desktop.ini
 # Keep `environment.yml` committed when you use conda.
 # Uncomment the next line only if your workflow generates private/local variants.
 # environment.local.yml
+
+# IDE specific files
+.idea/*
+.idea
+.vscode/*
+.vscode
