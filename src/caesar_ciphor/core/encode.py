@@ -35,7 +35,7 @@ def char_shift(char:str, shift:int) -> str:
 
     alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    
+
 
     if char.isalpha():
         # Inside
@@ -46,3 +46,9 @@ def char_shift(char:str, shift:int) -> str:
             # Convert back to character
         new_char = char + shift
         return new_char
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
