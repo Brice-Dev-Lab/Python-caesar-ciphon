@@ -27,6 +27,15 @@ def char_shift(char:str, shift:int) -> str:
         >>> char_shift('d', -3)  # → 'a' (reverse shift)
         'a'
     """
+    # Validation
+    if not isinstance(char, str):
+        raise TypeError('char must be a string')
+    if not isinstance(shift, int):
+        raise TypeError('shift must be an integer')
+
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+    
 
     if char.isalpha():
         # Inside
